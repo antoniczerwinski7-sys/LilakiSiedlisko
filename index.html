@@ -1,105 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Lilaki Siedlisko</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f8f5f2;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lilaki Siedlisko</title>
 
-        header {
-            background-color: #8e7cc3;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f2f8;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+header {
+    background: #8e7cc3;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
 
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 40px auto;
-        }
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
 
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: transform 0.2s;
+}
 
-        .card:hover {
-            transform: scale(1.03);
-        }
+.card:hover {
+    transform: scale(1.02);
+}
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+.card h3 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
 
-        .card-content {
-            padding: 15px;
-        }
+.card img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
 
-        .card-content h3 {
-            margin-top: 0;
-        }
+.card p {
+    padding: 15px 20px;
+    text-align: center;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #eee;
-            margin-top: 40px;
-        }
-    </style>
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <h1>Lilaki Siedlisko</h1>
-    <p>Galeria zdjęć naszego wyjątkowego miejsca</p>
+    <p>Galeria naszego wyjątkowego miejsca</p>
 </header>
 
 <div class="container">
-    <div class="gallery">
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Tytuł zdjęcia 1</h3>
-            </div>
-
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-                 alt="Opis zdjęcia 1">
-
-            <div class="card-content">
-                <p>Krótki opis zdjęcia. Tutaj możesz opisać miejsce lub wydarzenie.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="zdjecie3.jpg" alt="Opis zdjęcia 3">
-            <div class="card-content">
-                <h3>Tytuł zdjęcia 3</h3>
-                <p>Opis trzeciego zdjęcia.</p>
-            </div>
-        </div>
-
+    <!-- ZDJĘCIE 1 -->
+    <div class="card">
+        <h3>Ogród wiosną</h3>
+        <img src="https://prawo.gazetaprawna.pl/artykuly/1387963,sn-panstwo-moze-zasiedziec-prywatny-las.html" alt="Ogród wiosną">
+        <p>Wiosenny widok naszego ogrodu pełnego lilaków.</p>
     </div>
+
+    <!-- ZDJĘCIE 2 -->
+    <div class="card">
+        <h3>Dom wśród natury</h3>
+        <img src="https://prawo.gazetaprawna.pl/artykuly/1387963,sn-panstwo-moze-zasiedziec-prywatny-las.html" alt="Dom">
+        <p>Spokojne siedlisko otoczone zielenią i ciszą.</p>
+    </div>
+
 </div>
 
 <footer>
@@ -108,5 +99,3 @@
 
 </body>
 </html>
-
-
