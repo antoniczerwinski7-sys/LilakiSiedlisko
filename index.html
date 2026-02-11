@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lilaki Siedlisko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f5f2;
+        }
+
+        header {
+            background-color: #8e7cc3;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lilaki Siedlisko</h1>
+    <p>Galeria zdjęć naszego wyjątkowego miejsca</p>
+</header>
+
+<div class="container">
+    <div class="gallery">
+
+        <div class="card">
+            <img src="zdjecie1.jpg" alt="Opis zdjęcia 1">
+            <div class="card-content">
+                <h3>Tytuł zdjęcia 1</h3>
+                <p>Krótki opis zdjęcia. Tutaj możesz opisać miejsce lub wydarzenie.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="zdjecie2.jpg" alt="Opis zdjęcia 2">
+            <div class="card-content">
+                <h3>Tytuł zdjęcia 2</h3>
+                <p>Kolejny opis zdjęcia. Możesz dodawać dowolną ilość kart.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="zdjecie3.jpg" alt="Opis zdjęcia 3">
+            <div class="card-content">
+                <h3>Tytuł zdjęcia 3</h3>
+                <p>Opis trzeciego zdjęcia.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Lilaki Siedlisko
+</footer>
+
+</body>
+</html>
